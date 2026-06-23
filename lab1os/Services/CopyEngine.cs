@@ -30,7 +30,7 @@ namespace DirectoryCopier.Services
                 {
                     totalBytes += new FileInfo(file).Length;
                 }
-                catch { /* ignore inaccessible files */ }
+                catch {}
             }
             return (files, totalBytes);
         }
